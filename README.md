@@ -104,6 +104,19 @@ Expand supported object classes or train a custom model
 
 Possibly build a web app version
 _________________________________________________________________________________________
+📁 Project Structure
+
+image_detect_yolo.py: Object detection in image using YOLOv5
+
+image_detect_mobilenet.py: Object detection in image using MobileNet SSD
+
+object_detection_video_mobilenet.py: Object detection in video using MobileNet SSD
+
+Object Detection.mp4: Demo video 
+
+README.md: Project overview and documentation
+_________________________________________________________________________________________
+
 🎥 Project Demo
 
 This game was built with an intuitive interface and real-time interaction. You can watch a quick demo of it in action on my Linkedin.
