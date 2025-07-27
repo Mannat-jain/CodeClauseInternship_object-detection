@@ -5,8 +5,8 @@ import tkinter as tk
 from tkinter import filedialog
 
 # Load the pre-trained MobileNet SSD model and class labels
-prototxt_path = r"C:\\Users\\acer\\OneDrive\\Documents\\code files\\CodeClause\\object detection\\MobileNetSSD_deploy.prototxt.txt"
-model_path = r"C:\\Users\\acer\\OneDrive\\Documents\\code files\\CodeClause\\object detection\\MobileNetSSD_deploy.caffemodel"
+prototxt_path = "MobileNetSSD_deploy.prototxt.txt"
+model_path = "MobileNetSSD_deploy.caffemodel"
 net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
 
 # Define class labels MobileNet SSD can detect
