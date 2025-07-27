@@ -1,8 +1,6 @@
-# yolov5_detector.py
-
 from ultralytics import YOLO              # Import YOLO model from ultralytics
 import cv2                                # OpenCV for image processing
-import matplotlib.pyplot as plt           # To show output image (optional)
+import matplotlib.pyplot as plt         
 import os
 import tkinter as tk
 from tkinter import filedialog
@@ -22,11 +20,11 @@ image = cv2.imread(image_path)
 image = cv2.resize(image, (640, 640))
 
 # Run inference (detection)
-results = model(image)                    # Detect objects using YOLOv5
+results = model(image)                   
 
 # Draw boxes and labels on the image
-results[0].plot()                         # Automatically plots boxes with labels
-output_path = "detected_output.jpg"       # Output image filename
+results[0].plot()                        
+output_path = "detected_output.jpg"       
 cv2.imwrite(output_path, results[0].plot())  # Save the image with detections
 
 # Optional: show in a pop-up (matplotlib)
